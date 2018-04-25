@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Defance</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<style>
+	.owl-carousel .owl-item img {
+		max-height: ;
+	}
+	.owl-prev, .owl-next {
+		border: 0 solid #000000;
+		display: block !important;
+		height: 100px;
+		position: absolute;
+		top: 45%;
+		width: 15px;
+	}
+	.owl-prev{
+		left: 6px;
+	}
+	.owl-next {
+		right: 21px;
+	}
+	.owl-nav i {
+		font-size: 12px !important;
+		padding: 0 5px !important;
+	}
+	.owl-prev i, .owl-next i {
+		color: #cccccc;
+		transform: scale(3.5, 3.5);
+	}
+	.owl-prev i:hover, .owl-next i:hover {
+		color: white;
+		transition: 2s;
+	}
+	.owl-theme .owl-nav [class*="owl-"]:hover {
+		background: none;
+	}
+	.owl-theme .owl-nav [class*="owl-"] {
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	}
+
+	.owl-prev .fa, .owl-next .fa {
+	  background: rgba(0, 0, 41, 0.2) none repeat scroll 0 0;
+	  padding: 0 4px;
+	}
+
+	</style>
+
+  </head>
+  	<body>
+
+
+		<div class="owl-carousel owl-theme">
+			<div class="first-slide">
+				<div class="slider-contant">
+					<img src="img/c (1).jpg" class="img-responsive" alt="">
+				</div>
+			</div>
+			<!-- <div class="first-slide ">
+				<div class="slider-contant">
+					<img src="img/c (2).jpg" class="img-responsive" alt="">
+				</div>
+			</div>
+			<div class="first-slide ">
+				<div class="slider-contant">
+					<img src="img/c (3).jpg" class="img-responsive" alt="">
+				</div>
+			</div> -->
+		</div>
+					
+
+	 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.js"></script>
+
+
+		<script>
+			//Solution of single item showing
+			var slider= $('.owl-carousel');
+		    var amountHeaderImages = slider.find('img').length;
+
+		    slider.owlCarousel({
+		        items: 1,
+		        loop: (amountHeaderImages > 1), // if only 1 item no loop
+		        dots: true,
+		        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+
+		    });
+
+
+		    //Old code
+			/*
+			$('.owl-carousel').owlCarousel({
+				items:1,
+				lazyLoad:true,
+				loop:true,
+				animateIn: 'fadeIn',
+				animateOut: 'fadeOut',
+				nav: true,
+				dots: false,
+				lazyLoad: true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+			});
+			*/
+		</script>
+			
+
+	
+
+	
+  	</body>
+</html>
